@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nag+Mundari&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(img/neon_nights.jpg);
+    background-position: center center;
+    /*Fondo Principal*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    justify-content: center;
+    /*Estructuración de imagen*/
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    user-select: none;
+    transition: all 3s;
+}
+
+h1 {
+    color: #000000;
+    box-shadow: springgreen 2px;
+    background-color: white;
+    font-family: impact;
+    font-weight: 250;
+    letter-spacing: 2px;
+    padding: 0 0.2em 0 0.2em;
+}
+
+
+.principalIcon {
+    margin-top: 5em;
+    width: 7em;
+    height: 7em;
+}
+
+.robotitoText {
+    color: #ffffff;
+}
+
+main {
+    border-top: solid 0.1em white;
+    display: flex;
+    /*Estructuración de las 2 partes (15/85)*/
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    border-right: solid 0.1em white;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 0.3em;
+}
+
+.mainBoxNav {
+    width: 15%;
+}
+
+.mainBoxSection {
+    width: 85%;
+}
+
+.mainBoxNav,
+.mainBoxSection {
+    height: 100vh;
+    background-image: url(img/jojos.jpg);
+    background-position: center center;
+    /*Fondo Principal*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.mainBoxSection {
+    width: 60%;
+}
+
+.shopList {
+    width: 25%;
+    background-color: aqua;
+    height: 100vh;
+}
+
+.title,
+.mainBoxSection p {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    user-select: none;
+
+}
+
+.title {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.virguililla {
+    margin: 0 15% 0 15%;
+}
+
+.mainBoxSection p {
+    font-size: 1.5em;
+    margin: 0.3em 0.3em 2em 0.3em;
+}
+
+.boxDiagram {
+    display: flex;
+    justify-content: center;
+    /*Estructura IMAGEN*/
+    align-items: center;
+}
+
+.diagram {
+    /*Tamaño del Diagram */
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.scroll {
+    margin: auto;
+    margin-top: 2em;
+    height: 700px;
+    width: 700px;
+    border: 1px solid white;
+    overflow: auto;
+}
+
+code {
+    color: #ffffff;
+}
