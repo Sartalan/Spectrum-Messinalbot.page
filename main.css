@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nag+Mundari&display=swap');
+@font-face {
+    font-family: Manzana;
+    src: url(fonts/neo_robotix/Neo\ Robotix.otf),
+    url(fonts/neo_robotix/Neo\ Robotix.ttf),
+    url(fonts/neo_robotix/Neo\ Robotix\ Italic.otf)
+    url(fonts/neo_robotix/Neo\ Robotix\ Italic.ttf);
+            }
 
 
+            @font-face {
+                font-family: lol;
+                src: url(fonts/gerhaus/Gerhaus.ttf);
+            }
+
+            @font-face {
+                font-family: eo;
+                src: url(fonts/modern_age/Modern\ Age.otf),
+                url(fonts/modern_age/Modern\ Age.ttf);
+,            }
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +62,6 @@ h1 {
 }
 
 main {
-    border-top: solid 0.1em white;
     display: flex;
     /*Estructuración de las 2 partes (15/85)*/
 }
@@ -53,7 +69,7 @@ main {
 nav {
     display: flex;
     flex-direction: column;
-    border-right: solid 0.1em white;
+    border-right: solid 0.1em rgba(255, 255, 255, 0.3);
 }
 
 ul {
@@ -73,11 +89,11 @@ a {
 }
 
 .mainBoxNav {
-    width: 15%;
+    width: 20%;
 }
 
 .mainBoxSection {
-    width: 65%;
+    width: 80%;
 }
 
 .mainBoxNav,
@@ -93,16 +109,24 @@ a {
 .title,
 .mainBoxSection p {
     text-align: center;
-    color: #ffffff;
+    color: rgb(79, 241, 255);
     width: 100%;
     user-select: none;
+}
 
+.boxLol {
+
+    width:60%;
+    display: flex;
+    margin: auto;
+   
 }
 
 .title {
     margin: 1.1em 0 1.1em;
-    font-size: 1.9em;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.8em;
+    color: rgb(255, 72, 252);
+    font-family: eo;
     font-weight: bold;
 }
 
@@ -110,16 +134,27 @@ a {
     margin: 0 2.5% 0 2.5%;
 }
 
-.mainBoxSection p {
-    font-size: 1.5em;
-    margin: 0.3em 0.3em 2em 0.3em;
-}
 
+
+.mainBoxSection p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    margin: 0.3em 0.3em 2em 0.3em;
+    text-align: center;
+}
+.boxLol {
+    background-color: #5650518e;
+    padding: 0.4em;
+    padding-top: ;
+    border-radius:20px ;
+}
 .boxDiagram {
     display: flex;
     justify-content: center;
     /*Estructura IMAGEN*/
     align-items: center;
+    display: none;
 }
 
 .diagram {
@@ -132,36 +167,70 @@ a {
 
 .shopList {
     width: 20%;
-    border: solid 2px white;
+    border: solid 2px ;
     background-color: black;
    
 }
 
 .shopList h3 {
     margin: 0.5em 0 .5em 0;
-    color: white;
+    color: rgb(206, 59, 204);
+    font-weight: 900;
     font-size: 1.7em;
     text-align: center;
+    
 }
 
 .ulShop {
-    margin: 0.5em 0 0.5em 0;
-    
-
-    
+    margin: 0.5em 0 0.5em 0;  
 }
 
 .liComponentShop {
     margin: 0.5em 0 0.5em 0;
-    color: white;
-    font-size: 1.25em;
-    
-    
+    color: rgb(79, 241, 255);
+    font-size: 1.25em;   
 }
 
 
 
+.listIcon {
+    width: 2.5em;
+    margin-right: 7.5%;
+    margin-left:5%;
+}
 
+.boxList {
+    height: 100%; 
+    padding: 10% 0 10% 0; 
+    display: flex;
+    align-items: center;
+    background-color: #000000;  
+}
+
+.boxList li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin:5% 0 5% 0;
+}
+
+.boxList li a {
+    color:white;
+    font-size: 1.5em;
+    padding:5%;
+    width: 60%;
+    transition: all .25s;
+}
+
+.boxList li a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 15% 15% 5% 5%;
+}
+.listOne {
+    border-bottom:inset 1px rgb(79, 241, 255);
+}
 
 
 
