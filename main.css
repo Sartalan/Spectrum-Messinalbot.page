@@ -17,11 +17,19 @@
                 font-family: eo;
                 src: url(fonts/modern_age/Modern\ Age.otf),
                 url(fonts/modern_age/Modern\ Age.ttf);
-,            }
+            }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*Valores por Defecto*/
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000000;
 }
 
 header {
@@ -39,22 +47,34 @@ header {
     display: flex;
     user-select: none;
     transition: all 3s;
+    
+    
 }
+
 
 h1 {
     color: #000000;
     box-shadow: springgreen 2px;
-    background-color: white;
+    background-color:rgb(240,254,254);
     font-family: impact;
     font-weight: 250;
     letter-spacing: 2px;
     padding: 0 0.2em 0 0.2em;
+    position: relative;
+    overflow: hidden;
 }
+
+h1 span {
+    position: absolute;
+    display: block;
+}
+
 
 .principalIcon {
     margin-top: 5em;
     width: 7em;
     height: 7em;
+    /*Icon 1er Viewport //Robotito*/
 }
 
 .robotitoText {
@@ -70,6 +90,7 @@ nav {
     display: flex;
     flex-direction: column;
     border-right: solid 0.1em rgba(255, 255, 255, 0.3);
+    /*Side Bar Estructure*/
 }
 
 ul {
@@ -88,20 +109,19 @@ a {
     margin: 0.3em;
 }
 
-.mainBoxNav {
+.mainBoxNav {           /*Porcentaje Horizontal Utilizado 20/80*/
     width: 20%;
 }
-
+                        /*Ambos Valores conforman un 100% ( Son iguales a 0 ) */
 .mainBoxSection {
-    width: 80%;
+    width: 80%;        /*Porcentaje Horizontal Utilizado 80/20*/
 }
 
 .mainBoxNav,
-.mainBoxSection {
-    
+.mainBoxSection {  
     background-image: url(img/jojos.jpg);
     background-position: center center;
-    /*Fondo Principal*/
+    /*Fondo Principal*/                     /*Fondo de Jojo's*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -115,11 +135,9 @@ a {
 }
 
 .boxLol {
-
     width:60%;
     display: flex;
-    margin: auto;
-   
+    margin: auto; 
 }
 
 .title {
@@ -131,10 +149,8 @@ a {
 }
 
 .virguililla {
-    margin: 0 2.5% 0 2.5%;
+    margin: 0 2.5% 0 2.5%;  /*Simbolo raro*/
 }
-
-
 
 .mainBoxSection p {
     font-family: 'Courier New', Courier, monospace;
@@ -146,17 +162,9 @@ a {
 .boxLol {
     background-color: #5650518e;
     padding: 0.4em;
-    padding-top: ;
     border-radius:20px ;
 }
 
-
-.shopList {
-    width: 20%;
-    border: solid 2px ;
-    background-color: black;
-   
-}
 
 .shopList h3 {
     margin: 0.5em 0 .5em 0;
@@ -214,9 +222,7 @@ a {
     background-color: #ffffff;
     border-radius: 15% 15% 5% 5%;
 }
-.listOne {
-    border-bottom:inset 1px rgb(79, 241, 255);
-}
+
 .mainArticlePresentate{
     height: 100vh;
 }
@@ -225,6 +231,48 @@ a {
     height: 100vh;
     background-color: rgb(18, 62, 47);
 }
+.V0.True,
+.V1.True,
+.V2.True,
+.V3.True,
+.V4.True {
+    border-bottom:inset 1px rgb(79, 241, 255);      /*A Manipular con JavaScript*/
+}
+
+.boxList {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+}
+
+::-webkit-scrollbar {   /*Scroll*/
+    width:1vw;   
+
+}
+
+::-webkit-scrollbar-track { /*Fondo de Scroll*/
+   background-color: black;
+   border-radius: 4em;
+}
+
+::-webkit-scrollbar-thumb { /*Scroll en si mismo*/
+    border-radius:4em;
+    border-right:2px black;
+    animation-duration:10s;
+    animation-iteration-count: infinite; background-image:linear-gradient(to bottom, rgb(255, 72, 252) 0% , rgb(79, 241, 255) 100% ) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

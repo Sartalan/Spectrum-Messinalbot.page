@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animation.css">
     <title>Messinaldo</title>
 </head>
 
 <body>
+    <script src="main.js"></script>
     <header>
         <h1>
-            <span class="decorateOne"></span>
-            <span class="decorateTwo"></span>
-            <span class="decorateThree"></span>
-            <span class="decorateFour"></span>
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+            <span class="span4"></span>
             Robot Futbolista
         </h1>
         <img class="principalIcon" src="icons/robot.png" alt="">
@@ -28,19 +30,19 @@
             <ul class="boxList">
                 <li>
                     <img class="listIcon" src="icons/usb-svgrepo-com(1).svg" alt="">
-                    <a class="listOne" href="#">Home</a>
+                    <a class="V0 True" href="#Home">Home</a>
                 </li>
-                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon"><a class="" href="#">PCB</a></li>
-                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon"><a href="#">Eschematic</a></li>
-                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon"><a href="#">Code</a></li>
-                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon"><a href="#">APP</a></li>
+                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon v1"><a class="V1" href="#PCB">PCB</a></li>
+                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon v2" ><a class="V2" href="#">Eschematic</a></li>
+                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon v3"><a class="V3" href="#">Code</a></li>
+                <li><img src="icons/usb-svgrepo-com(1).svg" alt="" class="listIcon v4"><a class="V4" href="#">APP</a></li>
             </ul>
         </nav>
 
         <section class="mainBoxSection">
 
-
-            <article class="mainArticlePresentate">
+    <!--INICIO HOME VIEWPORT-->
+            <article class="mainArticlePresentate" id="Home"> 
 
                 <h2 class="title">
                     <span class="virguililla">~</span>
@@ -62,12 +64,16 @@
                 </div>
 
             </article>
-            <article class="pcbArticle" >
+
+    <!--INICIO PCB VIEWPORT-->
+
+            <article class="pcbArticle" id="PCB" >
                     <div class="imgBox"></div>
                     
             </article>
 
         </section>
+
         <!--
         <div class="shopList">
 
