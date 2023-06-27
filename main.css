@@ -1,3 +1,9 @@
+:root {
+    --background:rgb(0, 0, 0);
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nag+Mundari&display=swap');
 @font-face {
     font-family: Manzana;
@@ -46,9 +52,7 @@ header {
     flex-direction: column;
     display: flex;
     user-select: none;
-    transition: all 3s;
-    
-    
+    transition: all 3s;   
 }
 
 
@@ -193,6 +197,7 @@ a {
     margin-left:5%;
 }
 
+
 .boxList {
     height: 100vh; 
     padding: 10% 0 10% 0; 
@@ -208,6 +213,9 @@ a {
     justify-content: start;
     margin:5% 0 5% 0;
 }
+
+
+
 
 .boxList li a {
     color:white;
@@ -229,7 +237,7 @@ a {
 
 .pcbArticle {
     height: 100vh;
-    background-color: rgb(18, 62, 47);
+    background-color: var(--background);
 }
 .V0.True,
 .V1.True,
@@ -262,12 +270,57 @@ a {
     animation-iteration-count: infinite; background-image:linear-gradient(to bottom, rgb(255, 72, 252) 0% , rgb(79, 241, 255) 100% ) ;
 }
 
+.pcbArticle {
+    display: flex;
+    justify-content: space-around;
+}
 
+.box {
+    width: 40%;
+}
 
+.articleTitle {
+    font-size: 2.8em;
+    color: rgb(255, 72, 252);
+    font-family: eo;
+    font-weight: bold;
+    text-align: center;
+    margin: 5%;
+    border-bottom: solid 1px white;
+    user-select: none;
 
+}
+.imgBox {
+    margin: 2.5% 5% 0 5%;
+}
+.textArticle {
+    
+}
 
+.downloadLink {
+    text-decoration: none;
+    color: rgb(55, 223, 106);
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    width: 50%;
+    padding: 0.15em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #221e21f6;
+    border-radius: 0.3em 0.3em 0 0;
+    border-bottom: inset 3px rgba(255, 255, 255, 0.521);
+    margin: auto;
+    transition:all 0.1s;
+}
 
-
+.downloadLink:hover {
+    background-color: rgb(12, 37, 37);
+    border-bottom: inset 3px rgb(0, 0, 0);
+}
+.githubIcon {
+    width: 15%;
+    margin: 0 5% 0 5%;
+}
 
 
 
