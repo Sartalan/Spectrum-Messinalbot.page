@@ -1,8 +1,6 @@
 :root {
-    --background:rgb(0, 0, 0);
+    --background:rgb(0, 0, 0);  
 }
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nag+Mundari&display=swap');
 @font-face {
@@ -12,7 +10,6 @@
     url(fonts/neo_robotix/Neo\ Robotix\ Italic.otf)
     url(fonts/neo_robotix/Neo\ Robotix\ Italic.ttf);
             }
-
 
             @font-face {
                 font-family: lol;
@@ -35,8 +32,9 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    background-color: #000000;
-}
+    background-color: var(--background)
+}   
+    /* *Estructuración Primer Viewport*/
 
 header {
     background-image: url(img/neon_nights.jpg);
@@ -55,8 +53,7 @@ header {
     transition: all 3s;   
 }
 
-
-h1 {
+h1 {  /* *Robot Futbolista //Title Style */
     color: #000000;
     box-shadow: springgreen 2px;
     background-color:rgb(240,254,254);
@@ -68,7 +65,7 @@ h1 {
     overflow: hidden;
 }
 
-h1 span {
+h1 span {  /* Animation Estructure */
     position: absolute;
     display: block;
 }
@@ -87,28 +84,46 @@ h1 span {
 
 main {
     display: flex;
-    /*Estructuración de las 2 partes (15/85)*/
+    /* 
+    *Estructuración Base del contenido
+    TODO: To edite for mobile           
+    */
 }
 
-nav {
+/* *Inicio del Scroll*/
+
+::-webkit-scrollbar {   /*Scroll*/
+    width:1vw;   
+
+}
+
+::-webkit-scrollbar-track { /*Fondo de Scroll*/
+   background-color: black;
+   border-radius: 4em;
+}
+
+::-webkit-scrollbar-thumb { /*Scroll en si mismo*/
+    border-radius:4em;
+    border-right:2px black;
+    animation-duration:10s;
+    animation-iteration-count: infinite; background-image:linear-gradient(to bottom, rgb(255, 72, 252) 0% , rgb(79, 241, 255) 100% ) ;
+}
+    /* *Fin del Scroll */
+    /* *Nav Estructure */
+
+.mainBoxNav { 
     display: flex;
     flex-direction: column;
     border-right: solid 0.1em rgba(255, 255, 255, 0.3);
     /*Side Bar Estructure*/
 }
 
-ul {
+.boxList {
     display: flex;
     flex-direction: column;
 }
 
-li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-}
-
-a {
+li a {
     text-decoration: none;
     margin: 0.3em;
 }
@@ -138,13 +153,15 @@ a {
     user-select: none;
 }
 
-.boxLol {
-    width:60%;
+.contentBox {
+    min-width: 40%;
+    max-width:60%;
     display: flex;
     margin: auto; 
+    overflow: hidden;
 }
 
-.title {
+.title {  /* Messinaldo && Cristionel //Style */
     padding: 1.1em 0 1.1em;
     font-size: 2.8em;
     color: rgb(255, 72, 252);
@@ -152,8 +169,8 @@ a {
     font-weight: bold;
 }
 
-.virguililla {
-    margin: 0 2.5% 0 2.5%;  /*Simbolo raro*/
+.virguililla { /*Simbolo raro*/
+    margin: 0 2.5% 0 2.5%; 
 }
 
 .mainBoxSection p {
@@ -163,33 +180,11 @@ a {
     margin: 0.3em 0.3em 2em 0.3em;
     text-align: center;
 }
-.boxLol {
+.contentBox {
     background-color: #5650518e;
     padding: 0.4em;
     border-radius:20px ;
 }
-
-
-.shopList h3 {
-    margin: 0.5em 0 .5em 0;
-    color: rgb(206, 59, 204);
-    font-weight: 900;
-    font-size: 1.7em;
-    text-align: center;
-    
-}
-
-.ulShop {
-    margin: 0.5em 0 0.5em 0;  
-}
-
-.liComponentShop {
-    margin: 0.5em 0 0.5em 0;
-    color: rgb(79, 241, 255);
-    font-size: 1.25em;   
-}
-
-
 
 .listIcon {
     width: 2.5em;
@@ -197,8 +192,9 @@ a {
     margin-left:5%;
 }
 
+/* *Inicio de la Estructuración del Nav*/
 
-.boxList {
+.boxList {  /* ?Nav Box Estructure*/
     height: 100vh; 
     padding: 10% 0 10% 0; 
     display: flex;
@@ -206,16 +202,13 @@ a {
     background-color: #000000;  
 }
 
-.boxList li {
+.boxList li {   
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     margin:5% 0 5% 0;
 }
-
-
-
 
 .boxList li a {
     color:white;
@@ -231,6 +224,9 @@ a {
     border-radius: 15% 15% 5% 5%;
 }
 
+/* *Final del Nav */
+/* TODO: To edite for mobile after*/
+
 .mainArticlePresentate{
     height: 100vh;
 }
@@ -239,12 +235,13 @@ a {
     height: 100vh;
     background-color: var(--background);
 }
+
 .V0.True,
 .V1.True,
 .V2.True,
 .V3.True,
 .V4.True {
-    border-bottom:inset 1px rgb(79, 241, 255);      /*A Manipular con JavaScript*/
+    border-bottom:inset 1px rgb(79, 241, 255);      /* TODO: A Manipular con JavaScript*/
 }
 
 .boxList {
@@ -253,22 +250,6 @@ a {
     top: 0px;
 }
 
-::-webkit-scrollbar {   /*Scroll*/
-    width:1vw;   
-
-}
-
-::-webkit-scrollbar-track { /*Fondo de Scroll*/
-   background-color: black;
-   border-radius: 4em;
-}
-
-::-webkit-scrollbar-thumb { /*Scroll en si mismo*/
-    border-radius:4em;
-    border-right:2px black;
-    animation-duration:10s;
-    animation-iteration-count: infinite; background-image:linear-gradient(to bottom, rgb(255, 72, 252) 0% , rgb(79, 241, 255) 100% ) ;
-}
 
 .pcbArticle {
     display: flex;
@@ -290,14 +271,9 @@ a {
     user-select: none;
 
 }
-.imgBox {
-    margin: 2.5% 5% 0 5%;
-}
-.textArticle {
-    
-}
 
-.downloadLink {
+
+.downloadLink { 
     text-decoration: none;
     color: rgb(55, 223, 106);
     font-size: 2em;
@@ -317,18 +293,49 @@ a {
     background-color: rgb(12, 37, 37);
     border-bottom: inset 3px rgb(0, 0, 0);
 }
+
 .githubIcon {
     width: 15%;
     margin: 0 5% 0 5%;
 }
 
+/* *End of the PCB Article*/
+/* *Start of the Schematic Article*/
 
+.schematicArticle { /*Estructure*/
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.articleTitle.schematic {
+    margin: 1.5%;
+    padding: 0;
+}
+.imgBox {
+    margin:0;
+}
+.imgSchematic {
+    margin-bottom: 1.5vh;
+    border-bottom: inset 2px white;
+}
+/* *End of the Schematic Article*/
+/* *Start of the Code Article*/
 
-
-
-
-
-
+@media screen and (max-width:800px) {
+    .boxList,
+    .mainBoxNav {
+        display: none;
+    }
+    .mainBoxSection {
+        width: 100%;        /*Porcentaje Horizontal Utilizado 80/20*/
+    }
+    .imgBox img {
+        width: 80%;
+    }
+}
 
 
 /*
