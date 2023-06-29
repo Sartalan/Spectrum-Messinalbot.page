@@ -63,6 +63,7 @@ h1 {  /* *Robot Futbolista //Title Style */
     padding: 0 0.2em 0 0.2em;
     position: relative;
     overflow: hidden;
+    font-size: calc(1em + 5wh) ;
 }
 
 h1 span {  /* Animation Estructure */
@@ -73,8 +74,8 @@ h1 span {  /* Animation Estructure */
 
 .principalIcon {
     margin-top: 5em;
-    width: 7em;
-    height: 7em;
+    width: calc(7em + 5vw);
+    height:calc(7em + 5vw);
     /*Icon 1er Viewport //Robotito*/
 }
 
@@ -110,6 +111,24 @@ main {
 }
     /* *Fin del Scroll */
     /* *Nav Estructure */
+
+.barButtom {
+    position: absolute;
+    position: fixed;
+    top: 2.5%;
+    left: 2.5%;
+    border: none;
+    width: 10%;
+    height: 10%;
+    background-color: transparent;
+    display: none;
+}
+    
+.barImg {
+    height: 5em;
+    width: 5em;
+    
+}
 
 .mainBoxNav { 
     display: flex;
@@ -216,11 +235,12 @@ li a {
     padding:5%;
     width: 60%;
     transition: all .25s;
+    text-align: center;
 }
 
 .boxList li a:hover {
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #ffffff38;
     border-radius: 15% 15% 5% 5%;
 }
 
@@ -241,7 +261,8 @@ li a {
 .V2.True,
 .V3.True,
 .V4.True {
-    border-bottom:inset 1px rgb(79, 241, 255);      /* TODO: A Manipular con JavaScript*/
+    border-bottom:inset 1px rgb(79, 241, 255);
+    /* TODO: A Manipular con JavaScript*/    
 }
 
 .boxList {
@@ -336,6 +357,7 @@ li a {
 
 /*? MOBILE ADAPTATION*/
 @media screen and (max-width:800px) {
+
     .boxList,
     .mainBoxNav {
         display: none;  /*Eliminación del Nav*/
@@ -344,11 +366,20 @@ li a {
         width: 100%;    /*Uso completo de la Pagina Web*/
     }
 
-            /* *Resto */
+            /* *Rest */
             
     .imgBox img {
         width: 80%;
     }
+            /* *Header Customization*/
+    h1 {
+        background-color: transparent;
+    }
+    .barButtom {
+        display: block;
+    }
+
+  
 }
 
 
