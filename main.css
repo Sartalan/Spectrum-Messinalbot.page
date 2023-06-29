@@ -324,14 +324,28 @@ li a {
 /* *End of the Schematic Article*/
 /* *Start of the Code Article*/
 
+
+
+
+
+
+
+
+
+
+
+/*? MOBILE ADAPTATION*/
 @media screen and (max-width:800px) {
     .boxList,
     .mainBoxNav {
-        display: none;
+        display: none;  /*Eliminación del Nav*/
     }
     .mainBoxSection {
-        width: 100%;        /*Porcentaje Horizontal Utilizado 80/20*/
+        width: 100%;    /*Uso completo de la Pagina Web*/
     }
+
+            /* *Resto */
+            
     .imgBox img {
         width: 80%;
     }
