@@ -58,7 +58,8 @@
     animation-name: span3;
     animation-duration:1s;
     animation-iteration-count: infinite;
-    animation-delay:0.4s;
+    animation-delay:0.5s;
+    border-radius: 2px;
 }
 
 @keyframes span3 {
@@ -110,7 +111,8 @@
         width: 100%;
         height: 4px;
         background: linear-gradient(270deg, transparent,var(--violeta));
-        animation: span3 7s ease-out 1 ;
+        animation: span3 3s ease-out 1 ;
+        animation-delay: .9ms;
 
     }
     @keyframes span3 {
