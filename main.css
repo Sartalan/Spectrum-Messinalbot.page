@@ -185,14 +185,16 @@ li a {
 }
 .contentBox {
     display: flex;
-    width: 80%;
+    width: 80%;    width: 80%;
     min-height: 250px;
     display: flex;
     background-color: #3b303e8e;
     padding: 0.4em;
     border-radius:20px ;
 }
-
+.lineaDelete {
+    display: none;
+}
 .hrOne,
 .hrTwo {
     position: relative;
@@ -379,6 +381,7 @@ li a {
 @media screen and (max-width:1000px) {
 
     .boxList,
+    .and,
     .mainBoxNav,
     .virguililla {
         display: none;  /*Eliminación del Nav*/
@@ -387,6 +390,19 @@ li a {
         width: 100%;    /*Uso completo de la Pagina Web*/
     }
 
+    .lineaDelete {
+        display: block;
+        width: 25%;
+        margin-left: 37.5%;
+        
+        border-color: #c33b9a;
+        border: 1px;
+    }
+
+    .lineaDelete hr {
+        border-color:rgb(233 85 85);
+        border-style: solid;
+    }
 
 
             /* *Rest */
@@ -411,17 +427,22 @@ li a {
     }
     .contentBox {
         padding: 10px;
+            width: 95%;
     }
 
     .cosito {
         margin-bottom: 2em;
+        border: solid 2px white;
+        border-radius: 1px;
+
         width: 80%;
-        opacity: .6;
+        opacity: .3;
     }
 
     .contentBox p {
         font-size: 2em
     }
+
   
 }
 
