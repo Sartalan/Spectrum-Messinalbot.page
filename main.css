@@ -125,6 +125,7 @@ main {
     height: 10%;
     background-color: transparent;
     display: none;
+    z-index: 100;
 }
     
 .barImg {
@@ -146,8 +147,7 @@ main {
 }
 
 li a {
-    text-decoration: none;
-    margin: 0.3em;
+   
 }
 
 .mainBoxNav {           /*Porcentaje Horizontal Utilizado 20/80*/
@@ -192,7 +192,15 @@ li a {
     padding: 0.4em;
     border-radius:20px ;
 }
-.lineaDelete {
+.lineaDelete,
+.robotImgTablet,
+.liRobot1,
+.liRobot1 a
+  {
+    display: none;
+    margin: 0;
+}
+.boxList .liRobot1 {
     display: none;
 }
 .hrOne,
@@ -249,18 +257,30 @@ li a {
     margin:5% 0 5% 0;
 }
 
-.boxList li a {
+.boxList li .V0,
+.boxList li .V1,
+.boxList li .V2,
+.boxList li .V3,
+.boxList li .V4,
+.boxList li .V5 {
     color:white;
     font-size: calc(0.5em + 1.3vw);
     padding:5%;
-    width: 60%;
+    width: 80%;
     transition: all .25s;
     text-align: center;
+    text-decoration: none;
+    margin: 0.3em;
 }
 
 
 
-.boxList li a:hover {
+.boxList li .V0:hover,
+.boxList li .V1:hover,
+.boxList li .V2:hover,
+.boxList li .V3:hover,
+.boxList li .V4:hover,
+.boxList li .V5:hover {
     color: #ffffff;
     background-color: #ffffff1f;
     border-radius: 5px 5px 0 0;
@@ -290,7 +310,8 @@ li a {
 .V1.True,
 .V2.True,
 .V3.True,
-.V4.True {
+.V4.True,
+.V5.True {
     border-bottom:inset 1px rgb(79, 241, 255);
     /* TODO: A Manipular con JavaScript*/    
 }
@@ -365,6 +386,7 @@ li a {
     margin: 1.5%;
     padding: 0;
 }
+
 .imgBox {
     margin:0;
 }
@@ -376,9 +398,62 @@ li a {
 /* *Start of the Code Article*/
 
 
+@media screen and (max-width:1100px){
+    .boxList li .V0,
+    .boxList li .V1, 
+    .boxList li .V2,
+    .boxList li .V3,
+    .boxList li .V4,
+    .boxList li .V5 {
+        display: none;
+    }
+    .robotImgTablet,
+    .liRobot1 a,
+    ul .liRobot1 {
+    display: block;
+    }
+    .boxList .liRobot1 {
+        display: block;
+        margin-bottom: 30%;
+
+    }
+
+    .mainBoxNav {
+        width: 10%;
+    }
+
+    .boxList li {
+        margin: 15% 0 15% 0;
+        justify-content: center;
+    }
+  
+    .robotImgTablet {
+        width:100%;
+        padding:5%;
+    }
+
+    .listIcon {
+        width: 55%;
+        margin: 0;
+        padding: 5% 0 5% 0;
+    }
+    .aTablet {
+        width:100%;
+        border-radius: 0.5em;
+        margin: 0 5% 0 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .aTablet:hover {
+        background-color: rgba(57, 52, 52, 0.557);
+    }
+
+}
+
 
 /*? MOBILE ADAPTATION*/
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
 
     .boxList,
     .and,
