@@ -341,7 +341,7 @@ main {
 
 }
 .textArticle {
-    font-size: 1.5em;
+    font-size: calc(1.5em + 1vw);
     color: rgb(79, 241, 255);
     margin-bottom: 1%;
 }
@@ -370,6 +370,10 @@ main {
 .githubIcon {
     width: 15%;
     margin: 0 5% 0 5%;
+}
+.hrBetween {
+    opacity: .2;
+
 }
 
 /* *End of the PCB Article*/
@@ -567,23 +571,30 @@ main {
         justify-content: space-around;
         height: 50%;
     }
-
+    .olComponents.List {
+        font-size: calc(1.25em + 1vw);
+        margin-bottom: 10%;
+        font-style: oblique;
+        font-weight: 250;
+        color: rgb(212, 207, 207);
+    }
     .olComponents {
         font-size: calc(0.75em + 1vw);
+        margin: 2.5% 0 2.5% 0;
         user-select: none;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: rgba(228, 214, 214, 0.992);
-        list-style: circle;
+        font-style: italic;
+        font-weight: 75;
+        color: #9fa3a9;
+
+        list-style-type: circle;
     }
 
     .hrOl {
         width: 40%;
-        margin-left:-2%;
+        margin: 1% 0 0 -7.5%;
     }
-    .hrBetween {
-        opacity: .3;
-
-    }
+ 
 }
 
 
