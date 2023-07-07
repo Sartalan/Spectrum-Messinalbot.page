@@ -146,10 +146,6 @@ main {
     flex-direction: column;
 }
 
-li a {
-   
-}
-
 .mainBoxNav {           /*Porcentaje Horizontal Utilizado 20/80*/
     width: 20%;
 }
@@ -273,8 +269,6 @@ li a {
     margin: 0.3em;
 }
 
-
-
 .boxList li .V0:hover,
 .boxList li .V1:hover,
 .boxList li .V2:hover,
@@ -289,7 +283,7 @@ li a {
 .listIcon {
     width: calc(1.5em + 2vw);
     margin-right: 7.5%;
-    margin-left:5%;
+    margin-left:10%;
 }
 
 /* *Final del Nav */
@@ -322,6 +316,9 @@ li a {
     top: 0px;
 }
 
+.ulPcb {
+    display: none;
+}
 
 .pcbArticle {
     display: flex;
@@ -343,7 +340,11 @@ li a {
     user-select: none;
 
 }
-
+.textArticle {
+    font-size: 1.5em;
+    color: rgb(79, 241, 255);
+    margin-bottom: 1%;
+}
 
 .downloadLink { 
     text-decoration: none;
@@ -357,7 +358,7 @@ li a {
     background-color: #221e21f6;
     border-radius: 0.3em 0.3em 0 0;
     border-bottom: inset 3px rgba(255, 255, 255, 0.521);
-    margin: auto;
+    margin: 20% auto 7.5% auto;
     transition:all 0.1s;
 }
 
@@ -397,6 +398,8 @@ li a {
 /* *End of the Schematic Article*/
 /* *Start of the Code Article*/
 
+    /* ?Tablet Adaptation*/
+    /* *Start Nav*/
 
 @media screen and (max-width:1100px){
     .boxList li .V0,
@@ -407,36 +410,40 @@ li a {
     .boxList li .V5 {
         display: none;
     }
+
+            /* *Estableciendo Valores por defecto / Eliminando */
+
     .robotImgTablet,
     .liRobot1 a,
     ul .liRobot1 {
-    display: block;
+        display: block;
     }
+
     .boxList .liRobot1 {
         display: block;
-        margin-bottom: 30%;
-
+        margin-bottom: 30%; /*Separación del Robotito al resto de list icons*/
     }
 
     .mainBoxNav {
-        width: 10%;
+        width: 10%; /*Tamaño Nav Side*/
     }
 
     .boxList li {
-        margin: 15% 0 15% 0;
-        justify-content: center;
+        margin: 15% 0 15% 0;    /*Margenes de elemento Li*/
     }
-  
-    .robotImgTablet {
+    .robotImgTablet {               /*a del robot*/
         width:100%;
         padding:5%;
-    }
+    }          
+    
+            /* *Icons Customization*/
 
     .listIcon {
         width: 55%;
         margin: 0;
         padding: 5% 0 5% 0;
     }
+
     .aTablet {
         width:100%;
         border-radius: 0.5em;
@@ -449,18 +456,18 @@ li a {
         background-color: rgba(57, 52, 52, 0.557);
     }
 
+            /* *Nav End*/
 }
-
 
 /*? MOBILE ADAPTATION*/
 @media screen and (max-width:800px) {
-
     .boxList,
     .and,
     .mainBoxNav,
     .virguililla {
         display: none;  /*Eliminación del Nav*/
     }
+    
     .mainBoxSection {
         width: 100%;    /*Uso completo de la Pagina Web*/
     }
@@ -478,7 +485,6 @@ li a {
         border-color:rgb(233 85 85);
         border-style: solid;
     }
-
 
             /* *Rest */
             
@@ -515,10 +521,69 @@ li a {
     }
 
     .contentBox p {
-        font-size: 2em
+        font-size:calc(1.25em + 1vw) ;
+    }
+        /* *PCB*/
+    
+
+    
+    .pcbArticle {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 125vh;
+    }
+        
+    .box {
+        width: 95%;
     }
 
-  
+    .articleTitle {
+        margin: 0 0 5% 2.5%;
+    }
+
+    .textArticle {
+        text-align: center;
+        font-size: calc(1.25em + 1vw);
+    }
+
+    .downloadLink {
+        margin: 5% 25% 5% 25%;
+    }
+
+    .imgBox {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgBox img {
+        width: 50%;
+    }
+
+    .ulPcb {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        height: 50%;
+    }
+
+    .olComponents {
+        font-size: calc(0.75em + 1vw);
+        user-select: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgba(228, 214, 214, 0.992);
+        list-style: circle;
+    }
+
+    .hrOl {
+        width: 40%;
+        margin-left:-2%;
+    }
+    .hrBetween {
+        opacity: .3;
+
+    }
 }
 
 
