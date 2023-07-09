@@ -292,17 +292,17 @@
             border-radius: 7.5px;
             width: 80%;
             max-height: 40%;
-            margin: 1em 5% 1em ;
+            margin: 1em 5% 1em 0;
             padding: 0.3em 0 0.5em 0;
         }
             .mobButtomContainer p {
                 color: #ffff;
                 margin:0 0.5em 0 0.3em;
-                font-size: calc(3em + 2vw);
+                font-size: calc(1.8em + 3vw);
             }
             
             .mobIcon {
-                width: calc(4.5em + 2vw);
+                width: calc(2.7em + 3vw);
                 margin-right: 1em;
             }
 
