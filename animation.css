@@ -111,8 +111,8 @@
         width: 100%;
         height: 4px;
         background: linear-gradient(270deg, transparent,var(--violeta));
-        animation: span3 3s ease-out 1 ;
-        animation-delay: .9ms;
+        animation: span3 3s ease-in 1 ;
+        animation-delay: 1.5s;
 
     }
     @keyframes span3 {

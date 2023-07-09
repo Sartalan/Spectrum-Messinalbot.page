@@ -2,6 +2,14 @@
 :root {
     --component-title-color:#E6EDF3;
     --component-list-color:#9fa3a9;
+    --border-color-github-icon:#30363d;
+    --background-color-github-icon:#010409;
+    --background-hover-color-github-icon:#0d1117;
+}
+
+/*! DELETE*/
+.mobButtomContainer {
+    display: none;
 }
 
 @font-face {
@@ -83,7 +91,7 @@
             }
         
             .download:hover {
-                background-color: black;
+                background-color: #000000;
                 transition: 0.15s ease;
                 transition-delay:10ms;
                 opacity: 1;
@@ -98,15 +106,15 @@
                      flex-direction: column-reverse;
                      text-decoration: none;
                      color: white;
-                     background-color:#010409;
-                     border: 1px solid #30363d;
+                     background-color:var(--background-color-github-icon);
+                     border: 1px solid var(--border-color-github-icon);
                      width: 60%;
                      height: 60%;
                      border-radius: 1em;
                     }
 
                     .downloadA:hover {
-                        background-color: #0d1117;
+                        background-color: var(--background-hover-color-github-icon);
                         transition: 0.1s;
                     }
 
@@ -222,10 +230,15 @@
 
         /*! DELETE */
 
-
     .hrBetween {
         display: none;
     }   
+
+    /*! ADD*/
+
+    .mobD {
+        display: block;
+    }
         /** Estructure*/
         /* TODO: BOTH BOX*/
 
@@ -263,7 +276,6 @@
         margin: 0 0 0.5em 0.5em;
 }
     
-
     .olComponents {         /** Component Text List*/
         font-size: calc(1.3em + 1vw);
         margin-bottom: 0.5em;
@@ -278,4 +290,30 @@
     .hrOl {
         margin-bottom: 1em;
     }
+
+        /*! Start Download Mobile Buttom*/
+    
+  
+        .mobButtomContainer {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-color-github-icon);
+            border: solid 1px var(--border-color-github-icon);
+            padding: 0.30em 0.50em 0.30em 0.50em;
+            border-radius: 7.5px;
+            max-width: 80%;
+            max-height: 20%;
+        }
+            .mobButtomContainer p {
+                color: #ffff;
+                margin:0 0.5em 0 0;
+                font-size: calc(1.7em + 2vw);
+            }
+            
+            .mobIcon {
+                width: calc(2.7em + 2vw);
+                
+            }
 }
