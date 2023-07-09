@@ -24,6 +24,7 @@
     border-bottom: solid 2px rgba(255, 255, 255, 0.082);
     margin-bottom: 0.25em;
     padding-top:0.25em ;
+    user-select: none;
 }
 
 .pcbText {
@@ -31,6 +32,7 @@
     color: var(--text-blue);
     font-size: calc(.2em + 2vw);
     margin-bottom: 1em;
+    user-select: none;
 }
 
 /* *boxFirst End*/
@@ -49,6 +51,7 @@
     min-width: 270px;
     margin: 0 2.5% 0 2.5%;
     position: relative;
+    max-height: 1000px;
 }
 
     .pcbImg {
@@ -76,13 +79,15 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-        }
+           
+            }
         
             .download:hover {
                 background-color: black;
                 transition: 0.15s ease;
                 transition-delay:10ms;
                 opacity: 1;
+                
                 
             }
                     .downloadA {
@@ -174,7 +179,7 @@
 
     .linea {
         position: absolute;
-        background-color: #0d1117;
+        background-color: #97adce;
         width: 100%;
         bottom: 0;
         left: -100%;
@@ -185,7 +190,7 @@
 
     {
         left: 0;
-        transition: ease-out 0.4s;   
+        transition: ease-out 0.15s;   
     }
 
     .olComponents:hover {
@@ -196,12 +201,6 @@
         .olComponents.List:hover {
             background-color: #000000;
         }
-
-    
-
-
-
-
 
 
 
@@ -241,7 +240,7 @@
         }
 
         .pcbUl {
-            width: 80%;
+            width: 100%;
         }
         
 
@@ -261,11 +260,22 @@
 
     .olComponents.List {    /* *Component Title*/
         font-size: calc(2.5em + 2vw);
-    } 
+        margin: 0 0 0.5em 0.5em;
+}
+    
 
     .olComponents {         /** Component Text List*/
         font-size: calc(1.3em + 1vw);
+        margin-bottom: 0.5em;
 
     }
 
+    .download
+    {
+        pointer-events: none;
+    }
+
+    .hrOl {
+        margin-bottom: 1em;
+    }
 }
