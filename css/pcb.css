@@ -290,9 +290,9 @@
             border: solid 1px var(--border-color-github-icon);
             padding: 0.30em 0.50em 0.30em 0.50em;
             border-radius: 7.5px;
-            max-width: 100%;
+            width: 80%;
             max-height: 40%;
-            margin: 1em 0 1em 0;
+            margin: 1em 5% 1em ;
             padding: 0.3em 0 0.5em 0;
         }
             .mobButtomContainer p {
@@ -304,7 +304,6 @@
             .mobIcon {
                 width: calc(4.5em + 2vw);
                 margin-right: 1em;
-                
             }
 
             .mobButtomContainer:hover {
