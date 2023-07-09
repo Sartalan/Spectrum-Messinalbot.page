@@ -1,0 +1,271 @@
+/* * TITLE AND TEXT*/
+:root {
+    --component-title-color:#E6EDF3;
+    --component-list-color:#9fa3a9;
+}
+
+@font-face {
+    font-family: eo;
+    src: url(../fonts/modern_age/Modern\Age.otf),
+    url(../fonts/modern_age/Modern\ Age.ttf);
+}
+
+.boxFirst {     /* TODO: .pcbTitle && .pcbText container*/
+    width: 90%;
+    margin: 0 auto 0 auto;
+    height: 25%;
+}
+
+.pcbTitle {
+    font-family: eo;
+    color: var(--text-violet);
+    font-size: calc(1em + 2vw);
+    text-align: center;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.082);
+    margin-bottom: 0.25em;
+    padding-top:0.25em ;
+}
+
+.pcbText {
+    text-align: center;
+    color: var(--text-blue);
+    font-size: calc(.2em + 2vw);
+    margin-bottom: 1em;
+}
+
+/* *boxFirst End*/
+
+/* *img && component list start*/
+
+.boxSecond {    /*TODO: .pcbImg , .hrBetween && .pcbUl container */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60%;
+}
+
+.imgContainer {
+    width: 30%;
+    min-width: 270px;
+    margin: 0 2.5% 0 2.5%;
+    position: relative;
+}
+
+    .pcbImg {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow:  5px 5px 5px 0px rgba(24, 147, 141, 0.755);
+    }
+
+    .downloadContainer {
+        position: relative;
+    }
+
+        .download {
+            width: 100%;
+            height: 100%;
+            background-color:transparent;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            opacity:0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+            .download:hover {
+                background-color: black;
+                transition: 0.15s ease;
+                transition-delay:10ms;
+                opacity: 1;
+                
+            }
+                    .downloadA {
+                    
+                     display: flex;
+                     justify-content: space-around;
+                     align-items: center;
+                     flex-direction: column-reverse;
+                     text-decoration: none;
+                     color: white;
+                     background-color:#010409;
+                     border: 1px solid #30363d;
+                     width: 60%;
+                     height: 60%;
+                     border-radius: 1em;
+                    }
+
+                    .downloadA:hover {
+                        background-color: #0d1117;
+                        transition: 0.1s;
+                    }
+
+                    .downloadIcon {
+                       width: 50%;
+                    }
+                        .downloadIcon img {
+                            width: 100%;
+                        }
+
+                       .downloadText {
+                            display: block;
+                            text-align: center;
+                            width: 100%;
+                            font-size: 2.5em;
+                            font-family: "Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+                       }
+
+
+.hrBetween {
+    opacity: .15;
+    border: solid 0.5px white;
+    margin: 0 2.5% 0 2.5%;
+
+}
+
+.pcbUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2.5% 0 2.5% ;
+    width: 50%;
+
+}
+
+    .olComponents.List {    /* *Component Title*/
+        color: var(--component-title-color);
+        font-size: calc(1em + 2vw);
+        margin: 0 0 0.5em 1em;
+    } 
+
+    .olComponents {         /** Component Text List*/
+        color: var(--component-list-color);
+        list-style-type: circle;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: 75;
+        font-size: calc(0.6em + 1vw);
+        padding:1% 0 1% 10px;
+        margin-bottom:2%;
+        margin: 0 0 0 5%; 
+        position: relative;
+        overflow: hidden;
+        user-select: none;
+    }
+        .aShop {
+            text-decoration: none;
+            color: var(--component-list-color);
+            display: block;
+        }
+
+    .hrOl {
+        width: 10%;
+        opacity: .5;
+        margin-left:3% ;
+        
+    }
+
+    /* *Animation Start */
+
+    .linea {
+        position: absolute;
+        background-color: #0d1117;
+        width: 100%;
+        bottom: 0;
+        left: -100%;
+        height: 2px;
+    }
+
+    .olComponents:hover .linea
+
+    {
+        left: 0;
+        transition: ease-out 0.4s;   
+    }
+
+    .olComponents:hover {
+        background-color: #abaeb425;
+        border-radius: 2px;
+    }
+
+        .olComponents.List:hover {
+            background-color: #000000;
+        }
+
+    
+
+
+
+
+
+
+
+
+    /*? TABLET ADAPTATION*/
+
+@media screen and (max-width:1100px) {
+
+     /*! DELETE */
+
+    .hrBetween {
+        display: non;
+    }
+
+}
+
+    /*? MOBILE ADAPTATION*/
+@media screen and (max-width:950px) {
+
+        /*! DELETE */
+
+
+    .hrBetween {
+        display: none;
+    }   
+        /** Estructure*/
+        /* TODO: BOTH BOX*/
+
+    .pcbArticle {
+        height: auto;
+        max-height: 500vh;
+    }
+
+        .imgContainer {
+            width: 75%;
+            margin-bottom: 2.5%;
+        }
+
+        .pcbUl {
+            width: 80%;
+        }
+        
+
+    /* *Style*/ 
+    /*TODO:FIRST BOX*/
+
+    .pcbTitle {
+        font-size: calc(1.8em + 2vw);
+    }
+    
+    .pcbText {
+        font-size: calc(.9em + 2vw);
+    }
+
+    /* *Style*/
+    /* TODO: SECOND BOX*/
+
+    .olComponents.List {    /* *Component Title*/
+        font-size: calc(2.5em + 2vw);
+    } 
+
+    .olComponents {         /** Component Text List*/
+        font-size: calc(1.3em + 1vw);
+
+    }
+
+}

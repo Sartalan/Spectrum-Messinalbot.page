@@ -1,5 +1,7 @@
 :root {
     --background:rgb(0, 0, 0);  
+    --text-blue:rgb(79, 241, 255);
+    --text-violet:rgb(255, 72, 252);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nag+Mundari&display=swap');
@@ -11,11 +13,7 @@
     url(fonts/neo_robotix/Neo\ Robotix\ Italic.ttf);
             }
 
-            @font-face {
-                font-family: lol;
-                src: url(fonts/gerhaus/Gerhaus.ttf);
-            }
-
+       
             @font-face {
                 font-family: eo;
                 src: url(fonts/modern_age/Modern\ Age.otf),
@@ -316,67 +314,7 @@ main {
     top: 0px;
 }
 
-.ulPcb {
-    display: none;
-}
 
-.pcbArticle {
-    display: flex;
-    justify-content: space-around;
-}
-
-.box {
-    width: 40%;
-}
-
-.articleTitle {
-    font-size: 2.8em;
-    color: rgb(255, 72, 252);
-    font-family: eo;
-    font-weight: bold;
-    text-align: center;
-    margin: 5%;
-    border-bottom: solid 1px white;
-    user-select: none;
-
-}
-.textArticle {
-    font-size: calc(1.5em + 1vw);
-    color: rgb(79, 241, 255);
-    margin-bottom: 1%;
-}
-
-.downloadLink { 
-    text-decoration: none;
-    color: rgb(55, 223, 106);
-    font-size: 2em;
-    text-align: center;
-    display: block;
-    width: 50%;
-    padding: 0.15em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #221e21f6;
-    border-radius: 0.3em 0.3em 0 0;
-    border-bottom: inset 3px rgba(255, 255, 255, 0.521);
-    margin: 20% auto 7.5% auto;
-    transition:all 0.1s;
-}
-
-.downloadLink:hover {
-    background-color: rgb(12, 37, 37);
-    border-bottom: inset 3px rgb(0, 0, 0);
-}
-
-.githubIcon {
-    width: 15%;
-    margin: 0 5% 0 5%;
-}
-.hrBetween {
-    opacity: .2;
-
-}
-
-/* *End of the PCB Article*/
 /* *Start of the Schematic Article*/
 
 .schematicArticle { /*Estructure*/
@@ -465,11 +403,21 @@ main {
 
 /*? MOBILE ADAPTATION*/
 @media screen and (max-width:800px) {
+
+    .mainBoxNav, .mainBoxSection {
+        background-image: none;
+    }
     .boxList,
     .and,
     .mainBoxNav,
     .virguililla {
         display: none;  /*Eliminación del Nav*/
+    }
+
+    .mainArticlePresentate {
+        max-height: 500vh;
+        height: auto;
+        margin-bottom: 1em;
     }
     
     .mainBoxSection {
@@ -527,87 +475,7 @@ main {
     .contentBox p {
         font-size:calc(1.25em + 1vw) ;
     }
-        /* *PCB*/
+     
     
-
-    
-    .pcbArticle {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 125vh;
-    }
-        
-    .box {
-        width: 95%;
-    }
-
-    .articleTitle {
-        margin: 0 0 5% 2.5%;
-    }
-
-    .textArticle {
-        text-align: center;
-        font-size: calc(1.25em + 1vw);
-    }
-
-    .downloadLink {
-        margin: 5% 25% 5% 25%;
-    }
-
-    .imgBox {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .imgBox img {
-        width: 50%;
-    }
-
-    .ulPcb {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-around;
-        height: 50%;
-    }
-    .olComponents.List {
-        font-size: calc(1.25em + 1vw);
-        margin-bottom: 10%;
-        font-style: oblique;
-        font-weight: 250;
-        color: rgb(212, 207, 207);
-    }
-    .olComponents {
-        font-size: calc(0.75em + 1vw);
-        margin: 2.5% 0 2.5% 0;
-        user-select: none;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-        font-weight: 75;
-        color: #9fa3a9;
-
-        list-style-type: circle;
-    }
-
-    .hrOl {
-        width: 40%;
-        margin: 1% 0 0 -7.5%;
-    }
- 
 }
 
-
-/*
-.scroll {
-    margin: auto;
-    margin-top: 2em;
-    height: 700px;
-    width: 700px;
-    border: 1px solid white;
-    overflow: auto;
-}
-
-code {
-    color: #ffffff;
-}
