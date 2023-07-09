@@ -212,19 +212,6 @@
 
 
 
-
-    /*? TABLET ADAPTATION*/
-
-@media screen and (max-width:1100px) {
-
-     /*! DELETE */
-
-    .hrBetween {
-        display: non;
-    }
-
-}
-
     /*? MOBILE ADAPTATION*/
 @media screen and (max-width:950px) {
 
@@ -299,21 +286,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--background-color-github-icon);
+            background-color: var(--background-hover-color-github-icon);
             border: solid 1px var(--border-color-github-icon);
             padding: 0.30em 0.50em 0.30em 0.50em;
             border-radius: 7.5px;
-            max-width: 80%;
-            max-height: 20%;
+            max-width: 100%;
+            max-height: 40%;
+            margin: 1em 0 1em 0;
+            padding: 0.3em 0 0.5em 0;
         }
             .mobButtomContainer p {
                 color: #ffff;
-                margin:0 0.5em 0 0;
-                font-size: calc(1.7em + 2vw);
+                margin:0 0.5em 0 0.3em;
+                font-size: calc(3em + 2vw);
             }
             
             .mobIcon {
-                width: calc(2.7em + 2vw);
+                width: calc(4.5em + 2vw);
+                margin-right: 1em;
                 
+            }
+
+            .mobButtomContainer:hover {
+                background-color: var(--background-color-github-icon);
             }
 }
