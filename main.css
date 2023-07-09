@@ -219,12 +219,12 @@ main {
     text-align:center;
     display: flex;
     align-items: safe;
-    font-size: calc(1em + 2vw);
+    font-size: calc(1em + 2.4vw);
 }
 
 .title {  /* Messinaldo && Cristionel //Style */
     padding: 1.1em 0 1.1em;
-    font-size: calc(1.4em + 2vw);
+    font-size: calc(1.4em + 2.4vw);
     color: rgb(255, 72, 252);
     font-family: eo;
     font-weight: bold;
