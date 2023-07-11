@@ -317,26 +317,7 @@ main {
 
 /* *Start of the Schematic Article*/
 
-.schematicArticle { /*Estructure*/
-    background-color: #000000;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-.articleTitle.schematic {
-    margin: 1.5%;
-    padding: 0;
-}
 
-.imgBox {
-    margin:0;
-}
-.imgSchematic {
-    margin-bottom: 1.5vh;
-    border-bottom: inset 2px white;
-}
 /* *End of the Schematic Article*/
 /* *Start of the Code Article*/
 
