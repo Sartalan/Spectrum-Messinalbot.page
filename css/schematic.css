@@ -9,9 +9,15 @@
     padding: 0 35px;
     min-height: 100vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background: rgb(0, 0, 0);
     flex-direction: column;
+  }
+  .nisequecarajoponerleaestamrd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .schTitle {
@@ -20,19 +26,19 @@
     font-size: calc(2em + 2vw);
     text-align: center;
     user-select: none;
-
   }
 
   .schCosito {  /*Sch HR*/
     border-color: rgb(233 85 85);
     border-style: solid;
-    width: 50%;
+    width: 100%;
     margin-bottom: 0.1em;
   } 
 
   .wrapper{
     display: flex;
     max-width: 1200px;
+  
     position: relative;
   }
   .wrapper i{
@@ -77,22 +83,29 @@
   .carousel.dragging img{
     pointer-events: none;
   }
+  .carrousel {
+    max-height: 800px;
+  }
   .carousel img{
-    height: 340px;
-    object-fit: cover;
+    background-color: #282936FF;
+    height: 450px;
+    object-fit:contain;
     user-select: none;
     margin-left: 14px;
     width: calc(100% / 3);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.46);
+    border-top: solid 1px rgba(255, 255, 255, 0.46);
+    
   }
   .carousel img:first-child{
     margin-left: 0px;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1300px) {
     .carousel img{
       width: calc(100% / 2);
     }
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 700px) {
     .carousel img{
       width: 100%;
     }
