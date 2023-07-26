@@ -182,9 +182,35 @@
 
 .bodynot.exe .leftEye,
 .bodynot.exe .rightEye {
-    
-    animation: turbio 10s ease infinite;
+    animation: turbio 10s ease ;
+}
 
+.bodynot.exe {
+    animation: agrandar 10s ease ;
+}
+
+.bodynot.exe .thingOne::before,
+.bodynot.exe .thingTwo::before {
+    transform: translateY(1.5px);
+    animation: bigotito 20s ease;
+}
+
+@keyframes bigotito {
+    6% {
+        opacity: .9;
+        
+    }
+
+    9% {
+        opacity: 0;
+    }
+
+    100% {
+      
+            opacity: 0;
+       
+    }
+    
 }
 
 @keyframes turbio {
@@ -196,6 +222,26 @@
     }
     75% {
         box-shadow: inset -14px 12px 69px red;
+    }
+}
+
+@keyframes agrandar {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.22);
+    }
+
+    25% {
+        transform: scale(1.4);
+    }
+
+    55% {
+        transform: scale(1.66);
+    }
+    100% {
+        transform: scale(2);
     }
 }
 

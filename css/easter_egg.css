@@ -1,17 +1,25 @@
 
 
-.easterEgg { width: 50px; height: 50px;
+.easterEgg { width: 5em; height: 5em;
     /** <---------------------------------->*/
   position: absolute;
   top: 2.5%;
   right: 2.5%;
   border: none;
-  border-radius: 50%;
+  border-radius: 5em;
   /*? <---------------------------------->*/
   cursor: pointer;
-  border: solid 2.5px black;
-  background-color: rgb(120, 141, 165);
-  color: black;
+  background-color: rgba(240, 229, 229, 0.911);
+  transition: 0.2s ease;
+  
+}
+
+.easterEgg:hover {
+  background-color: rgb(226, 158, 215);
+}
+
+.egg {
+  width: 90%;
 }
 
 .eggDiv { width: auto; height: 50px;
@@ -22,7 +30,7 @@
   display: flex;
   justify-content: space-around;
   align-items:center;
-  top: 2.5%;
+  top: 3.5%;
   right: 2.5%;
   right:calc(2.5% + 100px);
   border-radius: 0.25em;
@@ -49,6 +57,7 @@
     justify-content: center;
     /*? <---------------------------------->*/
     background-color: rgba(68, 29, 80, 0.384);
+    transition: transform .15s ease;
 }
 
 .eggInBtn { height: 100%; width: 50px;
@@ -65,7 +74,10 @@
 
 .eggInBtn:hover {
   border-bottom: solid 2px white;
- 
+}
+
+.eggLi:hover {
+  transform: translateY(5px);
 }
 
 .eggImg {
