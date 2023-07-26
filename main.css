@@ -119,8 +119,8 @@ main {
     top: 2.5%;
     left: 2.5%;
     border: none;
-    width: 10%;
-    height: 10%;
+    width: 5em;
+    height: 5em;
     background-color: transparent;
     display: none;
     z-index: 100;
