@@ -1,4 +1,4 @@
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 .easterEgg { width: 5em; height: 5em;
     /** <---------------------------------->*/
@@ -22,7 +22,12 @@
   width: 90%;
 }
 
-.eggDiv { width: auto; height: 50px;
+.eggI {
+  font-size: 3.25em;
+  color: blueviolet;
+}
+
+.eggDiv { width: auto; height:60px;
     /** <---------------------------------->*/
   visibility: hidden;
   opacity: 0;
@@ -30,9 +35,9 @@
   display: flex;
   justify-content: space-around;
   align-items:center;
-  top: 3.5%;
+  top: 3.25%;
   right: 2.5%;
-  right:calc(2.5% + 100px);
+  right:calc(2.5% + 75px);
   border-radius: 0.25em;
   gap: 1em;
     /*? <---------------------------------->*/
@@ -50,11 +55,12 @@
   transform: translateX(-25px);
 }
 
-.eggLi {  height: 100%;
+.eggLi {  height: 90%;
     /** <---------------------------------->*/
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     /*? <---------------------------------->*/
     background-color: rgba(68, 29, 80, 0.384);
     transition: transform .15s ease;
@@ -85,4 +91,11 @@
   transition: .5s ease;
   background-color: transparent;
   width: 2.5em;
+}
+
+
+@media screen and (max-width:800px)  {
+    .easterEgg:hover {
+      background-color: rgba(240, 229, 229, 0.911);
+    }
 }
