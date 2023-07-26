@@ -1,6 +1,7 @@
 :root {
 
         /* *Colors */
+    --sphere-color:#dd636e;
     --head-color:#90d8f9;
     --eyes-color:#90d8f9;
     --face-color:#daeefa;
@@ -11,43 +12,55 @@
     --body-color:#90d8f9;
 
         /* *Measures */
-    --border-measure:0.45em;
+    --border-measure:0.35em;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+.bodynot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(340px + 4vw);
+        height: calc(350px + 4vw);
+        align-items: center;
 }
 
-html, body {
-    background-color: #ffffff;
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
     /* *Robot Start*/
 
+.sphereCont {
+    width: 27.5%;
+    height: 3.5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sphere {
+    height: 100%;
+    width: 30%;
+    background-color: var(--sphere-color);
+    border: solid var(--border-measure) black;
+    border-radius: 5em 5em 0 0;
+    border-bottom: none;
+}
+    /* *Two Red Sphere's Finished*/
+
 .head {
-    border: solid 0.5em black;
+    border: solid var(--border-measure) black;
     position: relative;
     display: flex;
     justify-content: center;
     width: 51%;
     height: 41%;
-    border-radius: 3em;
+    border-radius: 2em;
     background-color: var(--head-color);
 }
 
     .face {
         position: absolute;
         position: relative;
-        border-radius: 2em;
-        top:10%;
+        border-radius: 17.5%;
+        top:9%;
         width: 80%;
         height: 75%;
         border: solid var(--border-measure) black;
@@ -77,6 +90,11 @@ body {
             width: 25%;
             height: 82%;
             background-color:var(--eyes-color);
+
+            /*! <-----------------------------> */
+
+            transition-delay: 5s;
+          
         }
 
     /* *Two Eyes And the Top Box Ready*/
@@ -131,9 +149,9 @@ body {
             /*? Neck Start */
         
 .body {
-    margin-top:1%;
+    margin-top:3px;
     position: relative;
-    width: 45%;
+    width: 40%;
     height: 12.5%;
     background-color: var(--body-color);
     border: solid var(--border-measure) black;
@@ -158,11 +176,28 @@ body {
 }
 
 
+/*! ANIMATION WTF DOW OMAIGA*/
 
+/*! MESSINALDO.EXE O.O*/
 
+.bodynot.exe .leftEye,
+.bodynot.exe .rightEye {
+    
+    animation: turbio 10s ease infinite;
 
+}
 
-
+@keyframes turbio {
+    10% {
+        box-shadow: inset -1px 0px 6px red;
+    }
+    50% {
+        box-shadow: inset -1px 5px 6px red;
+    }
+    75% {
+        box-shadow: inset -14px 12px 69px red;
+    }
+}
 
 
 

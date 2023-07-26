@@ -71,3 +71,22 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);    
+
+
+//! EASTER EGG CODEEE GG //**exeeee jujjuju momento esquizofrenia jijiijiji */
+//!  son las 7 de la mañana y no duermo hace 3 dias ayuda jiasdjuwajs
+
+let eggBtn = document.querySelector("#easterEggBtn");
+let eggDiv = document.querySelector("#easterEggLi");
+
+    eggBtn.onclick = function(){
+            eggDiv.classList.toggle("active");
+    }
+
+
+let messi = document.querySelector("#botonUno");
+let robotito = document.querySelector("#lol")
+
+    messi.onclick = function(){
+            robotito.classList.toggle("exe");
+}
