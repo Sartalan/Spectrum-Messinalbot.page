@@ -92,6 +92,7 @@
             justify-content: space-around;
             align-items: center;
            
+           
             }
         
             .download:hover {
@@ -99,6 +100,7 @@
                 transition: background-color 0.15s ease;
                 transition-delay:10ms;
                 transition: transform 3s ease;
+                transition: opacity .25s ease;
                 opacity: 1;
                 
                 
@@ -136,7 +138,7 @@
                             text-align: center;
                             width: 100%;
                             font-size: 2.5em;
-                            font-family: "Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+                            font-family: monospace;
                        }
 
 
@@ -300,6 +302,7 @@
             max-height: 40%;
             margin: 1em 0 1em 0;
             padding: 0.3em 0 0.5em 0;
+            font-family: monospace;
         }
             .mobButtomContainer p {
                 color: #ffff;

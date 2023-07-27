@@ -38,7 +38,7 @@
 
   .wrapper{
     display: flex;
-    max-width: 1200px;
+    max-width: 2000px;
   
     position: relative;
   }
@@ -89,7 +89,7 @@
   }
   .carousel img{
     background-color: #282936FF;
-    height: 450px;
+    height: calc(400px + 17.5vh);
     object-fit:contain;
     user-select: none;
     margin-left: 14px;

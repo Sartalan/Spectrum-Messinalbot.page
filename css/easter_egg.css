@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.easterEgg { width: 5em; height: 5em;
+.easterEgg {     width: calc(4em + 1.25vw);
+                height: calc(4em + 1.25vw);
     /** <---------------------------------->*/
   position: absolute;
   top: 2.5%;
@@ -35,7 +36,7 @@
   display: flex;
   justify-content: space-around;
   align-items:center;
-  top: 3.25%;
+  top: 3.75%;
   right: 2.5%;
   right:calc(2.5% + 75px);
   border-radius: 0.25em;

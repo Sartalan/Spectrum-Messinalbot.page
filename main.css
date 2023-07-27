@@ -76,7 +76,7 @@ h1 {  /* *Robot Futbolista //Title Style */
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     box-shadow: springgreen 2px;
     background-color:b;
-    font-family:android;
+    font-family:impact;
     font-weight: 250;
     letter-spacing: 2px;
     padding: 0 0.2em 0 0.2em;
@@ -155,13 +155,15 @@ main {
 .mainBoxNav { 
     display: flex;
     flex-direction: column;
-    border-right: solid 0.1em rgba(255, 255, 255, 0.3);
+    
     /*Side Bar Estructure*/
 }
 
 .boxList {
     display: flex;
     flex-direction: column;
+    border-radius: 0 .5em .5em 0;
+    box-shadow: 0px 0px 3px 3px #2e707e;
 }
 
 .mainBoxNav {           /*Porcentaje Horizontal Utilizado 20/80*/
@@ -260,6 +262,7 @@ main {
     padding: 10% 0 10% 0; 
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     background-color: #000000;  
 }
 
@@ -268,7 +271,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin:5% 0 5% 0;
+
 }
 
 .boxList li .V0,
@@ -280,7 +283,7 @@ main {
     color:white;
     font-size: calc(0.5em + 1.3vw);
     padding:5%;
-    width: 80%;
+    width: 60%;
     transition: all .25s;
     text-align: center;
     text-decoration: none;
@@ -300,7 +303,7 @@ main {
 
 .listIcon {
     width: calc(1.5em + 2vw);
-    margin-right: 7.5%;
+    margin-right: 1em;
     margin-left:10%;
 }
 
