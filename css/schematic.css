@@ -111,5 +111,10 @@
     .carousel img{
       width: 100%;
     }
+
+    .schematicArticle {
+      max-height: 500vh;
+      height: auto;
+    }
   }
   

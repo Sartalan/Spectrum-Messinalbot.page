@@ -19,6 +19,26 @@
                 src: url(fonts/modern_age/Modern\ Age.otf),
                 url(fonts/modern_age/Modern\ Age.ttf);
             }
+            @font-face {
+                font-family: humanoid;
+                src: url(fonts/humanoid/humanoid.ttf),
+                url(fonts/humanoid/humanoid.txt);
+            }
+            @font-face {
+                font-family: android;
+                src: url(fonts/android/androidnation.ttf),
+                url(fonts/android/androidnation_b.ttf);
+                
+            }
+            @font-face {
+                font-family: freshbot;
+                src: url(fonts/freshbot/FRESHBOT.TTF),
+                url(fonts/freshbot/FRESHBOT.TTF);
+                
+            }
+
+            
+            
 
 * {
     margin: 0;
@@ -55,8 +75,8 @@ h1 {  /* *Robot Futbolista //Title Style */
     color:#c33b9a;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     box-shadow: springgreen 2px;
-    background-color:transparent;
-    font-family: impact;
+    background-color:b;
+    font-family:android;
     font-weight: 250;
     letter-spacing: 2px;
     padding: 0 0.2em 0 0.2em;
@@ -155,7 +175,7 @@ main {
 
 .mainBoxNav,
 .mainBoxSection {  
-    background-image: url(img/jojos.jpg);
+    background-image: url(img/jojs.jpg);
     background-position: center center;
     /*Fondo Principal*/                     /*Fondo de Jojo's*/
     background-repeat: no-repeat;
@@ -182,7 +202,7 @@ main {
     width: 80%;    width: 80%;
     min-height: 250px;
     display: flex;
-    background-color: #3b303e8e;
+    background-color: #1513168e;
     padding: 0.4em;
     border-radius:20px ;
 }
@@ -202,7 +222,7 @@ main {
     position: relative;
     border-radius: 50% 50% 50% 50%;
     opacity: 1;
-    border-color:rgb(180 72 255);
+    border-color:  rgb(8 170 219);
     border-style: solid;
     margin:.25em;
     border-width: 2.5px;
@@ -231,7 +251,7 @@ main {
 }
 
 .virguililla { /*Simbolo raro*/
-    margin: 0 2.5% 0 2.5%; 
+    margin: 0 2.25% 0 2.25%; 
 }
 /* *Inicio de la Estructuración del Nav*/
 

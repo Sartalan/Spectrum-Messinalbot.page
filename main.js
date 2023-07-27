@@ -85,8 +85,9 @@ let eggDiv = document.querySelector("#easterEggLi");
 
 
 let messi = document.querySelector("#botonUno");
-let robotito = document.querySelector("#lol")
+let robotito = document.querySelector("#lol");
 
     messi.onclick = function(){
             robotito.classList.toggle("exe");
+
 }

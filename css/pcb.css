@@ -8,7 +8,7 @@
 }
 
 /*! DELETE*/
-.mobButtomContainer {
+.mobButtomContainer , .cosito {
     display: none;
 }
 
@@ -41,6 +41,8 @@
     font-size: calc(.2em + 2vw);
     margin-bottom: 1em;
     user-select: none;
+    background-color: #1513168e;
+    border-radius: 0.25em;
 }
 
 /* *boxFirst End*/
@@ -60,6 +62,8 @@
     margin: 0 2.5% 0 2.5%;
     position: relative;
     max-height: 1000px;
+    display: flex;
+    align-items: center;
 }
 
     .pcbImg {
@@ -74,7 +78,7 @@
 
         .download {
             width: 100%;
-            height: 100%;
+            height: auto;
             background-color:transparent;
             border-radius: 10px;
             position: absolute;
@@ -92,8 +96,9 @@
         
             .download:hover {
                 background-color: #000000;
-                transition: 0.15s ease;
+                transition: background-color 0.15s ease;
                 transition-delay:10ms;
+                transition: transform 3s ease;
                 opacity: 1;
                 
                 
@@ -116,6 +121,7 @@
                     .downloadA:hover {
                         background-color: var(--background-hover-color-github-icon);
                         transition: 0.1s;
+                        transform: scale(1.01);
                     }
 
                     .downloadIcon {
@@ -217,13 +223,13 @@
 
         /*! DELETE */
 
-    .hrBetween {
+    .hrBetween, .cosito {
         display: none;
     }   
 
     /*! ADD*/
 
-    .mobD {
+    .mobD, .cosito {
         display: block;
     }
         /** Estructure*/
