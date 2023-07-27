@@ -414,7 +414,8 @@ main {
     .boxList,
     .and,
     .mainBoxNav,
-    .virguililla {
+    .virguililla,
+    h1 {
         display: none;  /*Eliminación del Nav*/
     }
 
