@@ -128,7 +128,8 @@ main {
     border-radius:4em;
     border-right:2px black;
     animation-duration:10s;
-    animation-iteration-count: infinite; background-image:linear-gradient(to bottom, rgb(255, 72, 252) 0% , rgb(79, 241, 255) 100% ) ;
+    animation-iteration-count: infinite; 
+    background-image:linear-gradient(to bottom, rgb(255, 72, 252) 0% , rgb(79, 241, 255) 100% ) ;
 }
     /* *Fin del Scroll */
     /* *Nav Estructure */

@@ -1,12 +1,12 @@
 .codeArticle {
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 }
+
 
 .codeText {
     text-align: center;
@@ -15,19 +15,46 @@
     font-size: calc(2em + 2vw);
     text-align: center;
     user-select: none;
+    margin-bottom: 0.25em;
+    width: 60%;
 
 }
 
-.codeBox {
-    height: 80%;
-    width: 95%;
-    background-color: rgb(22, 22, 24);
+.pre {
+    height: 65%;
     overflow-y: scroll;
-    overflow-x: none;
-    border-radius: .25em;
+    overflow-x: hidden;
+    
 }
-    .codeBox  .cCode {
-        font-size: 1.25em;
-        color: white;
-        font-family: monospace;
+    .pre::-webkit-scrollbar {
+        width:.65em;
+        background-color: rgba(228, 216, 216, 0.171);
+    }
+
+    .pre::-webkit-scrollbar-track {
+        background-color: rgba(22, 22, 22, 0.801);
+        border-radius: 0;
+    }
+
+    .pre::-webkit-scrollbar-thumb {
+        background-image:none;
+        background-color: rgba(255, 255, 255, 0.411);
+        border-radius: 0.25em;
+    }
+    
+
+    .hrCode {
+        margin-left: 5%;
+        margin-top: 1em;
+        width: 60%;
+        border-style: solid;
+        height: 2px;
+        border-color: rgb(155, 209, 219);
+    }
+
+    /*! MOBILE*/
+    @media screen and (max-width:800px) {
+        codeArticle {
+            height: 150vh;
+        }
     }

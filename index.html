@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="css/pcb.css">
@@ -13,9 +14,9 @@
     <link rel="stylesheet" href="css/easter_egg.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="testDir/robot.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+    <script src=" https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js "></script>
     <title>Messinaldo</title>
+    <link rel="stylesheet" href="css/prettyfy.css">
 </head>
 
 <body>
@@ -126,11 +127,11 @@
 
                 <li>        
                                             <!--!CODE-->
-                    <a href="" class="aTablet">
+                    <a href="#Code" class="aTablet">
                         <img src="icons/code.png" alt="" class="listIcon v3">
                     </a>
 
-                    <a class="V3" href="#">Code</a>
+                    <a class="V3" href="#Code">Code</a>
                 </li>
 
                 <li>                        <!--!APP-->
@@ -299,12 +300,13 @@
      </article>
 
      <article class="codeArticle">
-        <h2 class="codeText">Code</h2>
+        <h2 class="codeText" id="Code">Code</h2>
+    
+       
+        
+        <pre class="prettyprint   pre"><code class="language-c">
 
-        <div class="codeBox">
-            <pre>
-                <code class="cCode">
-        #include "BluetoothSerial.h"
+                #include "BluetoothSerial.h"
     #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
     #error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
     #endif
@@ -320,12 +322,15 @@
     if (event == ESP_SPP_START_EVT) {
         Serial.println("Inicializado SPP");
     }
+
     else if (event == ESP_SPP_SRV_OPEN_EVT ) {
         Serial.println("Cliente conectado");
     }
+
     else if (event == ESP_SPP_CLOSE_EVT  ) {
         Serial.println("Cliente desconectado");
     }
+
     else if (event == ESP_SPP_DATA_IND_EVT ) {
         Serial.println("Datos recibidos");
         while (BT.available()) { // Mientras haya datos por recibir
@@ -333,16 +338,17 @@
         }
     }
     }
-    void setup() {
-        Serial.begin(115200); // Inicializando la conexión serial para debug
-    BT.begin("ESP32_Fulbo"); // Nombre de tu Dispositivo Bluetooth y en modo esclavo
-    Serial.println("El dispositivo Bluetooth está listo para emparejar");
-    BT.register_callback(callback_function); // Registramos la función "callback_function" como función callback.
 
-    pinMode(Motor1a, OUTPUT);
-    pinMode(Motor1b, OUTPUT);
-    pinMode(Motor2a, OUTPUT);
-    pinMode(Motor2b, OUTPUT);
+    void setup() {
+            Serial.begin(115200); // Inicializando la conexión serial para debug
+        BT.begin("ESP32_Fulbo"); // Nombre de tu Dispositivo Bluetooth y en modo esclavo
+        Serial.println("El dispositivo Bluetooth está listo para emparejar");
+        BT.register_callback(callback_function); // Registramos la función "callback_function" como función callback.
+
+        pinMode(Motor1a, OUTPUT);
+        pinMode(Motor1b, OUTPUT);
+        pinMode(Motor2a, OUTPUT);
+        pinMode(Motor2b, OUTPUT);
     }
     void loop() {
     if (BT.available()) // Compruebe si recibimos algo de Bluetooth
@@ -447,9 +453,10 @@
     digitalWrite(Motor2a, LOW);
     digitalWrite(Motor2b, LOW);
     }
-                </code>
-            </pre>
-        </div>
+        </code></pre>
+
+    <hr class="hrCode">
+  
      </article>
 
 
