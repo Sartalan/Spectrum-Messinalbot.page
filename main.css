@@ -202,7 +202,7 @@ main {
 }
 .contentBox {
     display: flex;
-    width: 80%;    width: 80%;
+    width: 90%;
     min-height: 250px;
     display: flex;
     background-color: #1513168e;
@@ -265,6 +265,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     background-color: #000000;  
+    box-shadow: 1px 1px 3px 0px #2e707e;
 }
 
 .boxList li {   

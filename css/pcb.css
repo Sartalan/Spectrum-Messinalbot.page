@@ -267,7 +267,7 @@
     /* TODO: SECOND BOX*/
 
     .olComponents.List {    /* *Component Title*/
-        font-size: calc(2.5em + 2vw);
+        font-size: calc(2em + 2vw);
         margin: 0 0 0.5em 0.5em;
 }
     
@@ -298,7 +298,7 @@
             border: solid 1px var(--border-color-github-icon);
             padding: 0.30em 0.50em 0.30em 0.50em;
             border-radius: 7.5px;
-            width: 75%;
+            width: 80%;
             max-height: 40%;
             margin: 1em 0 1em 0;
             padding: 0.3em 0 0.5em 0;

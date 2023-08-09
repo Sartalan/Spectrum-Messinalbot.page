@@ -83,11 +83,10 @@ pre.prettyprint {
 
 .hrCode {
   margin-left: 5%;
-  margin-top: 1em;
+  margin-top: .25em;
   width: 90%;
-  border-style: solid;
-  height: 2px;
-  border-color: rgb(155, 209, 219);
+
+  border: solid .1px rgba(255, 255, 255, 0.46);
 }
 
 .codeText {
