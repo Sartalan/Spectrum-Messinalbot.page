@@ -18,7 +18,12 @@
     margin-bottom: 0.25em;
     width: 60%;
 
+ 
+
+
 }
+
+
 
 .pre {
     height: 65%;
@@ -44,7 +49,7 @@
     
 
     .hrCode {
-        margin-left: 5%;
+        margin-left: 35px;
         margin-top: 1em;
         width: 60%;
         border-style: solid;
