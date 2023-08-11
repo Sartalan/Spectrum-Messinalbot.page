@@ -1,3 +1,26 @@
+//! LOADER 
+
+
+let loader = document.querySelector("#loader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
@@ -10,6 +33,8 @@ const showHideIcons = () => {
     arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
     arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
+
+
 
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
