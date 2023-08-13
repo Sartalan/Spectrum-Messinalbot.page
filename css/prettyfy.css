@@ -74,22 +74,23 @@ pre.prettyprint {
 
 @media screen and (max-width:800px) {
   pre.prettyprint {
-    width: 90%;
+    width: 80%;
     padding: 0em;
   }
   .codeText , .pre {
-    margin-left:35px;
+    
 }
 
 .hrCode {
-  margin-left: 35px;
+ 
   margin-top: .25em;
-  width: 90%;
+  width: 80%;
   border: solid .1px rgba(255, 255, 255, 0.46);
 }
 
 .codeText {
-  width: 90%;
+  width: 80%;
+  margin-top: 5%;
 }
 
 

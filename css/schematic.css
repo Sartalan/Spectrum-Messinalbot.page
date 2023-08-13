@@ -116,5 +116,9 @@
       max-height: 500vh;
       height: auto;
     }
+
+    .carousel {
+      pointer-events: none;
+    }
   }
   
