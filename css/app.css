@@ -1,4 +1,81 @@
 .appArticle {
   height: 100vh;
   background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+/** PlayStore Buttom*/
+
+.leftApp { 
+  width: 250px;
+}
+
+    .nothingBox {
+      height: calc(9.5em + (1em + 1vw));
+      background-color: transparent;
+      width: 100%;
+    }
+    .linkApp {
+     display: flex;
+     flex-direction: column;
+     background-color: #121212;
+     padding: 1em;
+     border-radius: .75em;
+    }
+
+
+  .linkApp > h4 {
+    text-align: center;
+    width: 100%;
+    color: #d0d1d5;
+    font-size: calc(1em + 1vw);
+  }
+
+  .linkApp > img {
+    width: 100%;
+  }
+  
+  /** Img Right*/
+
+  .rightApp {
+
+  }
+    .rightApp > h2 {
+      color: wheat;
+      text-align: center;
+      font-family: eo;
+      color: var(--text-violet);
+      font-size: calc(2em + 2vw);
+      user-select: none;
+    }
+
+    .rightApp > img {
+      width: 100%;
+      border-radius: .75em;
+    }
+
+    @media screen and (max-width: 700px) {
+       
+      .nothingBox {
+        display: none;
+      }
+      
+      .appArticle{
+        max-height: 500vh;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap:.5em;
+      }
+
+      .rightApp {
+        width: 100%;
+      }
+       .rightApp > img {
+        width: 91%;
+        margin-left: 5%;
+       }
+      
+    }
