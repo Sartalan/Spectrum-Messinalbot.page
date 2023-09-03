@@ -55,7 +55,6 @@
     transition: all .15s ease-in-out;
     transform: translateY(-.75em);
     filter: invert(.014);
-    fikt
   }
   
   /** Img Right*/
@@ -105,7 +104,7 @@
         width: 100%;
       }
        .rightApp > img {
-        width: 80%;
+        width: 90%;
         margin-left: 5%;
        }
       
