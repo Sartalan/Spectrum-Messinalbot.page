@@ -1,3 +1,9 @@
+.toDeleteOnPc {
+  display: none;
+}
+
+
+
 .appArticle {
   height: 100vh;
   background-color: rgb(0, 0, 0);
@@ -20,7 +26,7 @@
     .linkApp {
      display: flex;
      flex-direction: column;
-     background-color: #121212;
+     background-color:transparent;
      padding: 1em;
      border-radius: .75em;
     }
@@ -36,6 +42,21 @@
   .linkApp > img {
     width: 100%;
   }
+
+  .dawdw a {
+    transition: all .15s ease-in-out;
+   
+  }
+   .dawdw a img:first-child {
+    border-radius: .5em .5em 0 0;
+   }
+
+  .dawdw a:hover {
+    transition: all .15s ease-in-out;
+    transform: translateY(-.75em);
+    filter: invert(.014);
+    fikt
+  }
   
   /** Img Right*/
 
@@ -49,6 +70,7 @@
       color: var(--text-violet);
       font-size: calc(2em + 2vw);
       user-select: none;
+      margin-bottom: 0.25em;
     }
 
     .rightApp > img {
@@ -56,9 +78,17 @@
       border-radius: .75em;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 800px) {
+
+
+      .toDeleteOnPc {
+        display: block;
+      }
+      
        
-      .nothingBox {
+      .nothingBox,
+      .toDeleteOnMobile
+       {
         display: none;
       }
       
@@ -68,13 +98,14 @@
         flex-direction: column-reverse;
         justify-content: center;
         gap:.5em;
+        align-items: flex-start;
       }
 
       .rightApp {
         width: 100%;
       }
        .rightApp > img {
-        width: 91%;
+        width: 80%;
         margin-left: 5%;
        }
       
