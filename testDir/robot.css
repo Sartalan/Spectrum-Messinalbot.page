@@ -255,5 +255,28 @@
   100% { transform: rotate(0deg); }
 }
 
+@media screen and (max-width:400px) {
+    :root {
+        /* *Measures */
+    --border-measure:0.25em;
+}
+
+    .bodynot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(17em + 3vw);
+        height: calc(18em + 3vw);
+        align-items: center;
+}
+
+    .leftEye, .rightEye {
+        border: solid var(0);
+    }
+    
+    .neck {
+        top: -25%;
+    }
+}
 
 
