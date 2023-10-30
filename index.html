@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="css/schematic.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/easter_egg.css">
+    <link rel="stylesheet" href="css/model.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="testDir/robot.css">
     <script src=" https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js "></script>
     <title>Messinaldo</title>
     <link rel="stylesheet" href="css/prettyfy.css">
+
+    
 </head>
 
 <body id="body">
@@ -95,7 +98,7 @@
     <!--?   Fin Primer Viewport-->
     <main class="main">
     <!--?   Barra de Navegación-->
-        <nav class="mainBoxNav">
+        <nav class="mainBoxNav" id="nav">
 
           
 
@@ -161,9 +164,9 @@
             <article class="mainArticlePresentate" id="Home"> 
 
                 <h2 class="title">
-                    <span class="virguililla"><</span>
+                    <span class="virguililla"></span>
                     Messinaldo <span class="and">&&</span> <span class="lineaDelete"><hr></span> Cristionel
-                    <span class="virguililla">/></span>
+                    <span class="virguililla"></span>
                 </h2>
 
                     <hr class="cosito">
@@ -300,6 +303,8 @@
             <i id="right" class="fa-solid fa-angle-right"></i>
           </div>
      </article>
+    
+     <!-- *INICIO CODE VIEWPORT-->
 
      <article class="codeArticle" id="Code">
         <h3 class="codeText" >Code</h3>
@@ -462,6 +467,8 @@
   
      </article>
 
+     <!-- *INICIO APP VIEWPORT-->
+
      <article class="appArticle" id="App">
         <div class="leftApp">
          <div class="nothingBox"></div>
@@ -482,6 +489,14 @@
              <img src="img/appImgMobile.png" alt="" class="toDeleteOnPc">
          </picture>
  
+      </article>
+
+       <!-- *INICIO MODEL VIEWPORT-->
+
+      <article class="modelArticle" id="model">
+
+        <script type="module" src="model.js"></script>
+
       </article>
 
 
