@@ -21,7 +21,7 @@
 .boxFirst {     /* TODO: .pcbTitle && .pcbText container*/
     width: 90%;
     margin: 0 auto 0 auto;
-    height: 25%;
+    height: auto;
 }
 
 .pcbTitle {
@@ -56,35 +56,38 @@
     height: 60%;
 }
 
-.imgContainer {
+.imgContainer { /*picture*/
     width: 30%;
     min-width: 270px;
     margin: 0 2.5% 0 2.5%;
     position: relative;
     max-height: 1000px;
-    display: flex;
-    align-items: center;
+    
 }
 
     .pcbImg {
-        width: 100%;
+        width: 17em;
+        height: 17em;
         border-radius: 10px;
         box-shadow:  5px 5px 5px 0px rgba(24, 147, 141, 0.755);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 
-    .downloadContainer {
-        position: relative;
-    }
 
         .download {
-            width: 100%;
-            height: auto;
+            width: 17em;
+            height: 17em;
             background-color:transparent;
             border-radius: 10px;
             position: absolute;
             top: 0;
-            right: 0;
             left: 0;
+            right: 0;
             bottom: 0;
             margin: auto;
             opacity:0;
@@ -171,7 +174,7 @@
         font-style: italic;
         font-weight: 75;
         font-size: calc(0.6em + 1vw);
-        padding:1% 0 1% 10px;
+        padding:1% 0 0 10px;
         margin-bottom:2%;
         margin: 0 0 0 5%; 
         position: relative;
@@ -317,5 +320,21 @@
 
             .mobButtomContainer:hover {
                 background-color: var(--background-color-github-icon);
+            }
+
+            
+        .download {
+            width: 17em;
+            height: 17em;
+            background-color:transparent;
+            border-radius: 10px;
+            position: static;
+            margin: none;
+            opacity:0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           
+           
             }
 }

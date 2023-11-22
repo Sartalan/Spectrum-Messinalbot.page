@@ -8,7 +8,7 @@
 }
 
 
-.codeText {
+.codeText{
     text-align: center;
     font-family: eo;
     color: var(--text-violet);
@@ -22,23 +22,23 @@
 
 
 
-.pre {
+.pre , .pre-class {
     height: 65%;
     overflow-y: scroll;
     overflow-x: hidden;
     
 }
-    .pre::-webkit-scrollbar {
+    .pre::-webkit-scrollbar , .pre-class::-webkit-scrollbar {
         width:.65em;
         background-color: rgba(228, 216, 216, 0.171);
     }
 
-    .pre::-webkit-scrollbar-track {
+    .pre::-webkit-scrollbar-track , .pre-class::-webkit-scrollbar-track {
         background-color: rgba(22, 22, 22, 0.801);
         border-radius: 0;
     }
 
-    .pre::-webkit-scrollbar-thumb {
+    .pre::-webkit-scrollbar-thumb , .pre-class::-webkit-scrollbar-thumb {
         background-image:none;
         background-color: rgba(255, 255, 255, 0.411);
         border-radius: 0.25em;
@@ -60,3 +60,18 @@
             height: 150vh;
         }
     }
+
+    /*? Segunda Parte*/
+
+    .code-wifi {
+        height: 100vh;
+        background-color: #0000;
+    }
+
+    .code-wifi > .pre-class {
+
+    }
+
+        .pre-class > .code-class {
+
+        }

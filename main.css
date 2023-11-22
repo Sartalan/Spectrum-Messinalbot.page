@@ -376,6 +376,7 @@ main {
 .pcbArticle {
     height: 100vh;
     background-color: var(--background);
+    gap: 1em;
 }
 
 .V0.True,
