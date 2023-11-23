@@ -1,0 +1,162 @@
+:root {
+    --pads-color:#000000;
+}
+
+:root {
+    --left-radius:1em 0 0 1em;
+    --right-radius:0 1em 1em 0;
+    --bottom-radius:0 0 1em 1em;
+    --top-radius:1em 1em 0 0;
+}
+/*GRID POSITION*/
+/*! ------------------------------------- */
+.top {
+    grid-column: 2;
+    grid-row:1;
+    border-radius: var(--top-radius);
+}
+.bottom {
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: var(--bottom-radius);
+}
+.right {
+    grid-column: 3;
+    grid-row: 2;
+    border-radius: var(--right-radius);
+}
+.left {
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: var(--left-radius);
+}
+
+/*Styles Customization*/
+/*! ------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.controller-box {
+    width: 20em;
+    height: 20em;
+    background-color:transparent;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/*! Center controller btn*/
+/*! ------------- */
+.center {
+    background-color: var(--pads-color);
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-icon {
+    width: 3em;
+    height: 3em;
+}
+
+/*!Buttons*/
+/*! ------------- */
+
+.controller-btn {
+    background-color: var(--pads-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.controller-btn > .arrow-in {
+    width: 6em;
+    height: 6em;
+    filter: invert(1);
+}
+
+/*? Button Functionality*/
+/*! ------------------------------------- */
+
+
+.controller-btn.active
+
+ {
+    background-color: #cecdc7;
+}
+
+.controller-btn.active .arrow {
+  color: #000000;
+
+}
+
+.velocidadBtn {
+            border-radius: 3em;
+        }
+
+        .btnThree {
+            background-color: rgb(19, 225, 212);
+                grid-column: 4;
+                grid-row: 100%;
+            }
+        .btnTwo {
+          background-color: rgb(19, 225, 212);
+                grid-column: 3;
+                grid-row: 100%;
+            }
+        .btnOne {
+            background-color: rgb(19, 225, 212);
+                grid-column: 2;
+                grid-row: 100%;
+            }
+
+        .velocityNav {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 3.5em;
+
+            display: grid;
+            grid-template-columns:10px 60px 60px 60px  75%;
+            grid-template-rows: 100%;
+            grid-gap: 1em;
+        }
+
+            .arrow {
+              font-family: 'Fira Sans';
+
+              user-select: none;
+              color: white;
+              font-size: 3.5em;
+            }
+
+            .CIRCULO {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              height: 21em;
+              width: 21em;
+              border-radius: 10em;
+              box-shadow: -3px 6px #ffffff;
+              z-index: -5;
+            background-color: transparent;
+            }
