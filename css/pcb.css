@@ -66,10 +66,11 @@
 }
 
     .pcbImg {
-        width: 17em;
-        height: 17em;
+        width: 300px;
+        height: 220px;
+
         border-radius: 10px;
-        box-shadow:  5px 5px 5px 0px rgba(24, 147, 141, 0.755);
+        box-shadow:  5px 5px 5px 0px rgba(137, 24, 147, 0.755);
         position: absolute;
         top: 0;
         left: 0;
@@ -80,8 +81,8 @@
 
 
         .download {
-            width: 17em;
-            height: 17em;
+            width: 300px;
+            height: 220px;
             background-color:transparent;
             border-radius: 10px;
             position: absolute;
@@ -94,7 +95,6 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-           
            
             }
         
@@ -118,8 +118,8 @@
                      color: white;
                      background-color:var(--background-color-github-icon);
                      border: 1px solid var(--border-color-github-icon);
-                     width: 60%;
-                     height: 60%;
+                     width: 320px;
+                     height: 220px;
                      border-radius: 1em;
                     }
 
@@ -130,7 +130,7 @@
                     }
 
                     .downloadIcon {
-                       width: 50%;
+                       width: 30%;
                     }
                         .downloadIcon img {
                             width: 100%;
